@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+    <!---- CSS Linkage ------>
+    <link rel="stylesheet" href="style.css">
+
+    <!---- Font Awesome Cdn Linkage ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!------- Favicon Linkage --------->
+    <link rel="shortcut icon" href="fav.png" type="x-icon">
+</head>
+<style>
+    .home-link{
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        width: 60px;
+        height: 60px;
+        background-color: #fd1b5b;
+        border-radius: 50%;
+    }
+    
+    .home-link a{
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-link a img{
+        line-height: 50px;
+        width: 70%;
+        height: 70%;
+    }
+</style>
+<body>
+    <div class="home-link">
+        <a href="index.html">
+            <img src="home.png" alt="pic">
+        </a>
+    </div>
+    <div class="img-folder">
+        <img src="img1.png" alt="">
+    </div>
+
+    <!------- Form Start --------->
+    <h1 class="heading">Form</h1>
+    <div class="form-wrapper">
+        <form action="script1.php" method="POST">
+            <div class="form-wrapper1">
+                <input type="text" name="donar_first_name" placeholder="First Name(*)" required>
+                <input type="text" name="donar_last_name" placeholder="Last Name(*)" required>
+            </div>
+
+            <br>
+
+            <div class="form-wrapper2">
+                <label for="DOB">Date of birthday</label> <br>
+                <input type="date" name="DOB" id="DOB" required>
+            </div>
+
+            <br>
+
+            <div class="form-wrapper2">
+                <label for="group"> Blood Groups: <br> <br>
+                    <select id="group" name="group" required>
+                        <option>Select</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </label>
+            </div>
+
+            <br>
+
+            <div class="form-wrapper2">
+                <label for="Last">Last Donated Date</label> <br>
+                <input type="date" name="Last_date" id="Last" required>
+            </div>
+
+            <br>
+
+            <div class="form-wrapper2">
+                <input type="tel" name="ph_no" placeholder="Number(*)" required>
+            </div>
+
+            <br>
+
+            <div class="form-wrapper2">
+                <label for="st_add">Address:<br></label>
+                <input type="text" name="st_add" id="Address" placeholder="Street Address(*)" required>
+            </div>
+
+            <div class="form-wrapper1">
+                <input type="text" name="city" placeholder="City(*)" required>
+                <input type="text" name="state" placeholder="State(*)" required>
+            </div>
+
+            <br>
+
+            <div class="btn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <!------- Form End --------->
+
+    <!------------- Footer ------------->
+    <footer>
+        <div class="footer-content">
+            <h1 class="heading">We Care</h1>
+            <p>We are ready to help you anytime because <b>we care..</b> </p>
+            <ul class="solink">
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2021 We Care. Designed by <span>Group 6</span></p>
+        </div>
+    </footer>
+    <!------------- Footer End ------------->
+
+</body>
+
+</html>
